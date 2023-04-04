@@ -1,4 +1,4 @@
 export default function App() {
-  const texts = [<p>hello</p>, <p>world</p>]
+  const texts = ['hello', 'world'].map((text, index) => <p key={index}>{text}</p>)
   return <div>{texts}</div>
 }
