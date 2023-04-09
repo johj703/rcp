@@ -1,7 +1,7 @@
 export default function Style() {
   return (
     <div>
-      <h3>CopyMe</h3>
+      <h3>Style</h3>
       <span className="marerial-icons" style={{color: 'blue'}}>
         home
       </span>
