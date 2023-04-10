@@ -2,10 +2,10 @@ export default function Style() {
   return (
     <div>
       <h3>Style</h3>
-      <span className="marerial-icons" style={{color: 'blue'}}>
+      <span className="material-icons" style={{color: 'blue'}}>
         home
       </span>
-      <span className="marerial-icons" style={{fontSize: '50px', color: 'red'}}>
+      <span className="material-icons" style={{fontSize: '50px', color: 'red'}}>
         check_circle_outline
       </span>
     </div>
