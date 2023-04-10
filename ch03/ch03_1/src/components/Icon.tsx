@@ -1,7 +1,9 @@
 import type {FC} from 'react'
 
-export type IconProps = {}
+export type IconProps = {
+  name: string
+}
 
-export const Icon: FC<IconProps> = (props) => {
+export const Icon: FC<IconProps> = ({name}) => {
   return <span className="material-icons" />
 }
