@@ -8,7 +8,7 @@ export default function HeightTest() {
         <Div className="bg-blue-500 h-1/2">
           <p className="text-center text-red-50">h-1/2</p>
         </Div>
-        <Div className="bg-red-500 h-1/2">
+        <Div className="h-20 bg-red-500">
           <p className="text-center text-red-50">h-1/2</p>
         </Div>
       </Div>
