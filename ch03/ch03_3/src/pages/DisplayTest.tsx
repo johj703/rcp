@@ -15,7 +15,7 @@ export default function DisplayTest() {
   const inlineBlockChildren = D.range(1, 5 + 1).map((number) => (
     <div
       key={number}
-      className="w-8 h-8 m-4 text-center text-gray-700 inlie-block bg-sky-300">
+      className="inline-block w-8 h-8 m-4 text-center text-gray-700 bg-sky-300">
       {number}
     </div>
   ))
