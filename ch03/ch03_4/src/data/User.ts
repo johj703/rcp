@@ -8,7 +8,7 @@ export type IUser = {
   email: string
   avatar: string
 }
-//prettier-ignore
+//pretter-ignore
 export const makeUser = (
   uuid: string,
   name: string,

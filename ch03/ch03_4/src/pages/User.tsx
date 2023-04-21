@@ -14,8 +14,6 @@ const User: FC<UserProps> = ({user, ...props}) => {
         <Avatar src={avatar} size="2rem" />
         <div className="ml-2">
           <p className="font-bold">{name}</p>
-          <p className="text-gray-500 line-clamp-1">{jobTitle}</p>
-          <p className="text-blue-500 underline">{email}</p>
         </div>
       </div>
     </Div>
