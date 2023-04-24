@@ -6,7 +6,7 @@ export default function Basic() {
       <h2 className="text-3xl font-bold text-center">Basic</h2>
       <div className="flex mt-4 justify-evenly">
         <input className="input input-primary" />
-        <input className="input-primary" />
+        <Input className="input-primary" />
       </div>
     </section>
   )
