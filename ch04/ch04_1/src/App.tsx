@@ -1,13 +1,6 @@
-import ButtonTest from './pages/ButtonTest'
-import InputTest from './pages/InputTest'
-import ModalTest from './pages/ModalTest'
+import Clock from './pages/Clock'
 
 export default function App() {
-  return (
-    <main>
-      <ButtonTest />
-      <InputTest />
-      <ModalTest />
-    </main>
-  )
+  let today = new Date()
+  return <Clock today={today} />
 }
