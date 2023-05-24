@@ -10,4 +10,5 @@ export const rootReducer = (state: AppState = initialAppState, action: Actions) 
       return {...state, today: action.today}
     }
   }
+  return state // 필수!!
 }
