@@ -16,7 +16,7 @@ export default function RemoteUserTest() {
   const getRemoteUser = useCallback(() => {
     toggleLoading()
     D.fetchRandomUser()
-      .then((user) => didpatch(R.setUser(user)))
+      .then((user) => dispatch(R.setUser(user)))
       .catch(setError)
       .finally(toggleLoading)
   }, [dispatch, toggleLoading])
