@@ -4,15 +4,15 @@ export const setUser = (payload: T.State): T.SetUserAction => ({
   type: '@remoteUser/setUser',
   payload
 })
-export const changeEmail = (poyload: string): T.ChangeEmailAction => ({
+export const changeEmail = (payload: string): T.ChangeEmailAction => ({
   type: '@remoteUser/changeEmail',
   payload
 })
-export const changeName = (poyload: T.NameType): T.ChangeNameAction => ({
+export const changeName = (payload: T.NameType): T.ChangeNameAction => ({
   type: '@remoteUser/changeName',
   payload
 })
-export const changePicture = (poyload: T.PictureType): T.ChangePictureAction => ({
+export const changePicture = (payload: T.PictureType): T.ChangePictureAction => ({
   type: '@remoteUser/changePicture',
   payload
 })
