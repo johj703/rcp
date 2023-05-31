@@ -1,34 +1,18 @@
 import {Provider as ReduxProvider} from 'react-redux'
 import {useStore} from './store'
-import ClockTest from './pages/ClockTest'
-import CounterTest from './pages/CounterTest'
-import RemoteUserTest from './pages/RemoteUserTest'
-import Card from './pages/CardTest/Card'
+import LoggerTest from './pages/LoggerTest'
+import LoadingTest from './pages/LoadingTest'
+import ErrorMessageTest from './pages/ErrorMessageTest'
+import FetchTest from './pages/FetchTest'
 
 export default function App() {
   const store = useStore()
   return (
     <ReduxProvider store={store}>
-      <Card
-        card={{
-          uuid: '',
-          writer: {
-            uuid: '',
-            name: '',
-            jobTitle: '',
-            email: '',
-            avatar: ''
-          },
-          image: '',
-          title: '',
-          paragraphs: '',
-          dayMonthYearDate: '',
-          relativeDate: null
-        }}
-      />
-      <RemoteUserTest />
-      <CounterTest />
-      <ClockTest />
+      <FetchTest />
+      <ErrorMessageTest />
+      <LoadingTest />
+      <LoggerTest />
     </ReduxProvider>
   )
 }
