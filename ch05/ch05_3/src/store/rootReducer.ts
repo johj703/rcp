@@ -1,6 +1,10 @@
-import type {Action} from 'redux'
-import type {AppState} from './AppState'
-export const rootReducer = (state: AppState, action: Action) => state
+import {combineReducers} from 'redux'
+import * as L from './loading'
+import * as E from './errorMessage'
+import * as F from './fetchUser'
 
-// import {combineReducers} from 'redux'
-// export const rootReducer = combineReducer({})
+export const rootReducer = combineReducers({
+  loading: L.reducer,
+  errorMessage: E.reducer,
+  fetchUser: F.reducer
+})
