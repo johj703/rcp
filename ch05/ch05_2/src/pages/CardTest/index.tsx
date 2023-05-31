@@ -5,7 +5,7 @@ import * as D from '../../data'
 import type {AppState} from '../../store'
 import * as C from '../../store/cards'
 import {Title} from '../../components'
-import Card from './Cards'
+import Card from './Card'
 
 const makeCard = () =>
   D.makeCard(D.randomUUID(), D.makeRandomUser(), D.randomImage(200, 100), '', '', '', '')
