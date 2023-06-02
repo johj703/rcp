@@ -1,7 +1,8 @@
 import {configureStore} from '@reduxjs/toolkit'
 import {useMemo} from 'react'
 import {rootReducer} from './rootReducer'
-import logger from './logger'
+// import logger from './logger'
+import logger from 'redux-logger'
 
 const useLogger = process.env.NODE_ENV !== 'production'
 
