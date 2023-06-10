@@ -1,6 +1,12 @@
-import type {Action} from 'redux'
-import type {AppState} from './AppState'
-export const rootReducer = (state: AppState, action: Action) => state
+import {combineReducers} from 'redux'
+import * as L from './listEntities'
+import * as LO from './listidOrders'
+import * as LC from './listidCardidOrders'
+import * as C from './cardEntities'
 
-// import {combineReducers} from 'redux'
-// export const rootReducer = combineReducer({})
+export const rootReducer = combineReducers({
+  listEntities: L.reducer,
+  listidOrders: LO.reducer,
+  listidCardidOrders: LC.reducer,
+  cardEntities: C.reducer
+})
