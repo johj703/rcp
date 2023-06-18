@@ -5,7 +5,6 @@ import {Card, UUID} from '../store/commonTypes'
 import * as C from '../store/cardEntities'
 import * as LC from '../store/listidCardidOrders'
 import * as D from '../data'
-import {removeListidFromOrders} from './listidOrders'
 
 export const useCards = (listid: UUID) => {
   const dispatch = useDispatch()
