@@ -21,7 +21,7 @@ export const appendCardidToListid = (
   type: '@listidCardids/appendCardid',
   payload
 })
-export const removeCardidFromListId = (
+export const removeCardIdFromListId = (
   payload: T.ListidCardid
 ): T.RemoveCardidFromListidAction => ({
   type: '@listidCardids/removeCardid',
