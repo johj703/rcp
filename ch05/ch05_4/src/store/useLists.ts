@@ -53,5 +53,5 @@ export const useLists = () => {
     },
     [dispatch, listidOrders]
   )
-  return {lists, onCreateList, onRemoveList}
+  return {lists, onCreateList, onRemoveList, onMoveList}
 }
