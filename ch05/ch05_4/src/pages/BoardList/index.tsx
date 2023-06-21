@@ -4,6 +4,7 @@ import type {MoveFunc} from '../../components'
 
 import {useMemo} from 'react'
 import {Div} from '../../components'
+import {CardDroppable} from '../../components'
 import {Icon} from '../../theme/daisyui'
 import {ListDraggable} from '../../components'
 import ListCard from '../ListCard'
@@ -27,7 +28,13 @@ const BoardList: FC<BoardListProps> = ({
   const children = useMemo(
     () =>
       cards.map((card, index) => (
-        <ListCard key={card.uuid} card={card} onRemove={onRemoveCard(card.uuid)} />
+        <ListCard
+          key={card.uuid}
+          card={card}
+          onRemove={onRemoveCard(card.uuid)}
+          draggableId={card.uuid}
+          index={index}
+        />
       )),
     [cards, onRemoveCard]
   )
@@ -55,7 +62,7 @@ const BoardList: FC<BoardListProps> = ({
             />
           </div>
         </div>
-        <div className="flex flex-col p-2">{children}</div>
+        <CardDroppable droppableId={list.uuid}>{children}</CardDroppable>
       </Div>
     </ListDraggable>
   )
