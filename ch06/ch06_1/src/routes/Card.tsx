@@ -1,19 +1,8 @@
-import {useCallback} from 'react'
-import {useLocation, useNavigate} from 'react-router-dom'
-
 export default function Card() {
-  const location = useLocation()
-
-  const navigate = useNavigate()
-  const goBack = useCallback(() => {
-    navigate(-1)
-  }, [navigate])
   return (
-    <div>
-      <p>Location: {JSON.stringify(location, null, 2)}</p>
-      <button className="mt-4 btn btn-primary btn-xs" onClick={goBack}>
-        go back
-      </button>
-    </div>
+    <section className="mt-4">
+      <h2 className="text-5xl font-bold text-center">Card</h2>
+      <div className="mt-4"></div>
+    </section>
   )
 }
