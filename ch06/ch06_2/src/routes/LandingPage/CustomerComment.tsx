@@ -29,3 +29,4 @@ const CustomerComment: FC<CustomerCommentProps> = ({customerComment}) => {
     </Div>
   )
 }
+export default CustomerComment
