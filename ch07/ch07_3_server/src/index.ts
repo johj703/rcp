@@ -1,11 +1,13 @@
 import {createServer} from 'http'
+import express from 'express'
 
 const hostname = 'localhost',
   port = 4000
-createServer((req, res) => {
-  console.log('req.url', req.url)
-  console.log('req.method', req.method)
-  console.log('req.headers', req.headers)
-  res.write('Hello World!')
-  res.end()
-}).listen(port, () => console.log(`connect http://${hostname}:${port}`))
+
+// prettier-ignore
+const app = express()
+  .get('/', (req, res) => {
+    res.json({ message: 'Hello express World!' })
+  })
+
+createServer(app).listen(port, () => console.log(`connect http://${hostname}:${port}`))
