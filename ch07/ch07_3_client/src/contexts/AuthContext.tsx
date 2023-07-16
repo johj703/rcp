@@ -7,13 +7,13 @@ type Callback = () => void
 
 type ContextType = {
   loggedUser?: LoggedUser
-  singup: (email: string, password: string, callback?: Callback) => void
+  signup: (email: string, password: string, callback?: Callback) => void
   login: (email: string, password: string, callback?: Callback) => void
   logout: (callback?: Callback) => void
 }
 
 export const AuthContext = createContext<ContextType>({
-  singup: (email: string, password: string, callback?: Callback) => {},
+  signup: (email: string, password: string, callback?: Callback) => {},
   login: (email: string, password: string, callback?: Callback) => {},
   logout: (callback?: Callback) => {}
 })
